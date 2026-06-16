@@ -13,47 +13,9 @@ The system utilizes session-based authorization structures, secure form handling
 ---
 
 ## 🎬 Video Demo
-Want to see the platform in action? Click the badge below to watch our complete 2-minute application walkthrough showcasing the user signup flow, dynamic pet browsing, adoption form validation triggers, and back-office administrative decisions:
+Since this repository serves as a public source-code archive, a complete walkthrough of the user signup flow, dynamic pet browsing, adoption form validation triggers, and the back-office administrative decisions panel can be viewed here:
 
 [![Watch the Demo](https://img.shields.io/badge/Play_Demo_Video-Click_Here-FF6B6B?style=for-the-badge&logo=youtube&logoColor=white)](https://bit.ly/Pet_Adoption_Portal)
-
-
----
-
-## 📱 Application Interface & Core Views
-
-<p align="center">
-  <img src="screenshots/Screenshot 2026-06-16 at 18.18.36_2.jpg" width="400" alt="Landing Page"/>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="screenshots/Screenshot 2026-06-16 at 18.18.31_2.jpg" width="400" alt="Login System"/>
-</p>
-<p align="center">
-  <b>Landing Portal (`index.php`)</b> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <b>Secure Login Space (`login.php`)</b>
-</p>
-
-<p align="center">
-  <img src="screenshots/Screenshot 2026-06-16 at 18.18.52_2.jpg" width="400" alt="Pet Individual Profile"/>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="screenshots/Screenshot 2026-06-16 at 18.17.40_2.jpg" width="400" alt="Interactive Application Form"/>
-</p>
-<p align="center">
-  <b>Individual Profile View (`view_za3tar.php`)</b> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <b>Adoption Intake Document (`adoption.php`)</b>
-</p>
-
-<p align="center">
-  <img src="screenshots/Screenshot 2026-06-16 at 18.17.49_3.jpg" width="400" alt="User Submissions Dashboard"/>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="screenshots/Screenshot 2026-06-16 at 18.18.26_2.jpg" width="400" alt="Admin Control Panel"/>
-</p>
-<p align="center">
-  <b>Adopter Portal Track (`myAdoption.php`)</b> 
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <b>Back-Office Control Panel (`adminPage.php`)</b>
-</p>
 
 ---
 
@@ -67,7 +29,7 @@ Want to see the platform in action? Click the badge below to watch our complete 
 ### 🐾 Dynamic Pet Catalog & Adopter Space
 * **Dynamic Feed Rendering (`view_pet.php`):** Queries and streams active relational database listings to dynamically display active animal lists inside modular client view container components.
 * **Target Profile Focus (`view_za3tar.php`, `view_pet_za3tar.php`):** Pulls explicit target profiles into focus screens detailing specialized health, description, and asset mappings.
-* **Stateful Form Checks (`adoption.php`):** Collects applicant experience profiles, age limits, and adoption motivations under condition guards (`"You must be logged in to submit this form"`).
+* **Stateful Form Checks (`adoption.php`):** Collects applicant experience profiles, age limits, and adoption motivations under condition guards (*"You must be logged in to submit this form"*).
 * **Track Workspace (`myAdoption.php`):** Allows users to review ongoing review queues, track status changes, or drop application entities (`delete.php`).
 
 ### 👑 Back-Office Administrative Dashboard
