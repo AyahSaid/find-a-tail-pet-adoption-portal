@@ -6,14 +6,14 @@
 [![MySQL](https://img.shields.io/badge/Database-MySQL-%234479A1?logo=mysql&logoColor=white)](https://www.mysql.com)
 
 ## 📝 Overview
-**Find a Tail** is a data-driven full-stack web application built to streamline and secure the process of animal rescue and pet adoption. Developed as a collaborative team project for the *Web Technologies* curriculum, this platform features an intuitive public-facing interface for prospective adopters alongside an isolated, functional back-office administrative platform.
+**Find a Tail** is a data-driven full-stack pet adoption web application developed as a collaborative team project for the **Web Technologies** course at the German Jordanian University. 
 
-The system utilizes session-based authorization structures, secure form handling pipelines, and a structured **MySQL** relational database state managed completely by custom **PHP** backend logic operations.
+The platform connects potential adopters with rescue animals looking for homes through an easy-to-use interface. Instead of rendering static content, the system utilizes an active server-side authentication state and a relational database backend to orchestrate application validation pipelines, dynamic search indexing, and a back-office administration tracking panel.
 
 ---
 
 ## 🎬 Video Demo
-Since this repository serves as a public source-code archive, a complete walkthrough of the user signup flow, dynamic pet browsing, adoption form validation triggers, and the back-office administrative decisions panel can be viewed here:
+A complete walkthrough of the user signup flow, pet browsing, adoption request process validation triggers, and the live back-office admin dashboard can be viewed here:
 
 [![Watch the Demo](https://img.shields.io/badge/Play_Demo_Video-Click_Here-FF6B6B?style=for-the-badge&logo=youtube&logoColor=white)](https://bit.ly/Pet_Adoption_Portal)
 
@@ -21,21 +21,19 @@ Since this repository serves as a public source-code archive, a complete walkthr
 
 ## 🚀 Architectural Modules & Features
 
-### 🔐 User Management & Validation Pipelines
-* **Secure Registration (`signup.html`, `userSignup.php`):** Renders clean user creation templates connected directly to backend data targets.
-* **Authentication Middleware (`process_login.php`, `process_signup.php`):** Implements backend server-side validation checks to handle user requests, sanitize parameter injection strings, and sign secure session keys.
-* **Session Exits (`signout.php`):** Erases global server array session blocks securely to prevent local context exploits.
+### 👤 Authenticated Adopter Workspace
+* **Session Controls:** Enforces multi-role session verification. Guest users encounter strict form handling middleware guards (`"You must be logged in to submit this form"`) to protect transaction data.
+* **Adoption Intake Form:** Collects data-driven metrics including applicant name, age profile checks, historical pet ownership status, and motivational remarks.
+* **Self-Service Dashboard:** Enables users to track ongoing application states, interact with custom favorite catalogs, request structured downloads, or clear out historical submissions.
 
-### 🐾 Dynamic Pet Catalog & Adopter Space
-* **Dynamic Feed Rendering (`view_pet.php`):** Queries and streams active relational database listings to dynamically display active animal lists inside modular client view container components.
-* **Target Profile Focus (`view_za3tar.php`, `view_pet_za3tar.php`):** Pulls explicit target profiles into focus screens detailing specialized health, description, and asset mappings.
-* **Stateful Form Checks (`adoption.php`):** Collects applicant experience profiles, age limits, and adoption motivations under condition guards (*"You must be logged in to submit this form"*).
-* **Track Workspace (`myAdoption.php`):** Allows users to review ongoing review queues, track status changes, or drop application entities (`delete.php`).
+### 🐾 Dynamic Catalog Management
+* **Database Streaming:** Restructures and streams active lists dynamically from a relational database, organizing records inside accessible client card modules.
+* **Granular Profile Views:** Supports custom item focuses mapping distinct asset labels, description arrays, and age tags directly inside centralized target profile sheets.
 
-### 👑 Back-Office Administrative Dashboard
-* **Central Evaluation View (`adminPage.php`):** Collects submitted application fields in clean back-office views for review.
-* **Intake Content Creation (`addPet.php`):** Permits operators to inject new animal entities along with asset parameters directly into the live application pipeline database catalog.
-* **Status Controls (`accept.php`, `reject.php`, `deletePet.php`):** Exposes transactional command controls to update database states globally with a single click.
+### 👑 Back-Office Administration Suite
+* **Central Evaluation View:** Pulls active adoption applications into a back-office layout for quick credential assessment.
+* **Catalog Intake Engine:** Permits operators to scale up the catalog by injecting new animal entries along with dynamic image files into the application system.
+* **Transactional Determinations:** Exposes active execution systems to instantly accept, reject, or wipe data profiles globally across the database with a single action.
 
 ---
 
@@ -43,8 +41,46 @@ Since this repository serves as a public source-code archive, a complete walkthr
 
 | Layer | Component Technology Details |
 | :--- | :--- |
-| **Frontend Layouts** | HTML5, CSS3 Architecture Frameworks (`style.css`), Native JavaScript |
-| **Server Processing Core** | PHP (Hypertext Preprocessor) |
+| **Frontend Architecture** | HTML5, CSS3 Grid & Flexbox, Native JavaScript |
+| **Server-Side Engine** | PHP (Hypertext Preprocessor) |
+| **Database Architecture** | MySQL Relational Database Layer |
+| **Development Server** | Apache Server Arrays via Localhost Environments (XAMPP) |
+| **System Configurations** | PHP Relational Database Connection Logic (`db.php`) |
+
+---
+
+## 📂 Structural Codebase Inventory
+
+```text
+├── 📁 assets/                # Application style assets
+│   └── 📁 css/              # Independent template files
+├── 📁 img/                   # Database-linked animal asset records and vector graphics
+├── 📁 seeds/                 # Relational system data engines
+│   └── petSeed.php          # Initial database population script for setup testing
+│
+├── db.php                   # Centralized database configuration mapping links
+├── index.php                # Core public landing layout and entry space
+├── style.css                # Global cascading stylesheet defining custom palettes
+├── signup.html              # Structural registration layout template
+├── userSignup.php           # Post-handling router for incoming registration parameters
+│
+├── login.php                # Renders user credential identification forms
+├── process_login.php        # Validates user authorization arrays and drops session keys
+├── process_signup.php       # Sanitizes entry vectors for structural safety parameters
+├── signout.php              # Securely clears active tokens and environment states
+│
+├── view_pet.php             # Pulls and displays structural pet catalog feeds
+├── view_za3tar.php          # Renders specific descriptive variables onto profile cards
+├── view_pet_za3tar.php      # Synchronized profile component viewport
+├── adoption.php             # Stateful application collection forms
+├── myAdoption.php           # Renders personal application progress feeds
+├── delete.php               # Deletes pending adopter request forms
+│
+├── adminPage.php            # Unified evaluation portal managing application queues
+├── addPet.php               # Admin entry component used to scale catalog inventory
+├── deletePet.php            # Drops target profiles permanently from database collections
+├── accept.php               # Flips application tracking state to 'Accepted' globally
+└── reject.php               # Flips application tracking state to 'Rejected' globally| **Server Processing Core** | PHP (Hypertext Preprocessor) |
 | **Database Management** | MySQL Relational Database Layer (`db.php`) |
 | **Database Initializers** | PHP Database Population Engineering Scripting (`seeds/petSeed.php`) |
 | **Deployment Engine** | Localhost Environment via Apache Server Arrays |
