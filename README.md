@@ -17,7 +17,6 @@ Want to see the platform in action? Click the badge below to watch our complete 
 
 [![Watch the Demo](https://img.shields.io/badge/Play_Demo_Video-Click_Here-FF6B6B?style=for-the-badge&logo=youtube&logoColor=white)](https://bit.ly/Pet_Adoption_Portal)
 
-*(Note: Open this file in your code editor and swap out `YOUR_DEMO_VIDEO_LINK_HERE` with your actual video link!)*
 
 ---
 
